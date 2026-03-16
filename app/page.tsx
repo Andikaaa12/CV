@@ -1,20 +1,19 @@
-import Sidebar from "@/components/Sidebar"
-import MainContent from "@/components/MainContent"
+import Hero from "../components/Hero"
+import About from "../components/About"
+import Education from "../components/Education"
+import Skills from "../components/Skills"
+import Projects from "../components/Projects"
+import Contact from "../components/Contact"
 
 export default function Home() {
   return (
-    <div className="flex h-screen">
-
-
-      <div className="w-1/3 bg-blue-900 text-white fixed h-screen">
-        <Sidebar />
-      </div>
-
-
-      <div className="w-2/3 ml-[33.333%] h-screen overflow-y-scroll bg-gray-100 p-10">
-        <MainContent />
-      </div>
-
-    </div>
-  );
+    <main>
+      <Hero />
+      <About />
+      <Education />
+      <Skills />
+      <Projects />
+      <Contact />
+    </main>
+  )
 }
